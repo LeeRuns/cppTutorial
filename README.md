@@ -26,4 +26,4 @@ and windows machines.
 
 #### _Scientific Linux Machines_
 
-#### _ Linux Machines_
+#### _Linux Machines_
