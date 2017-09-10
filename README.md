@@ -43,20 +43,28 @@ q-how do i know what compilers are installed on my machine?
 q-how do i install mingw?
 q-can i run the same compilers on both scientific linux (red hat based) and ubuntu (debian based)?
 q-if i setup a cpp program in and compile it with mingw or cygwin, then want to share it with my co-workers, will they need to compile it or will they be able to run the executable?
-q- How do i get a list of all of the compilers that can be installed on a linux machine
-a-To list all available compilers that can be installed, enter:
-    _debian/ubuntu_       **$ apt-cache search Compiler**
-    _debian/ubuntu_       **$ apt-cache search Compiler | grep -i --color java**
-    _debian/ubuntu_       **$ apt-cache search Compiler | grep -i --color fortran**
+q- How do i get a list of all of the compilers that can be installed on a linux machine?    
+
+a- To list all available compilers that can be installed, enter:    
+    
+    _debian/ubuntu_     
+                (simple dump of all compilers)            **$ apt-cache search Compiler**    
+                (color the java compilers)                **$ apt-cache search Compiler | grep -i --color java**    
+                (color the fortran compilers)             **$ apt-cache search Compiler | grep -i --color fortran**    
     
     _Scientific Linux_    
-                      (general command for rhls)                      **$ yum search all compiler**
-                      (**preferred cmd**                              **$ yum groupinfo "Development tools"**
-q-what are the command to check the compilers installed on a linux machine
-a-  _ubuntu_              **$ dpkg --list | grep compiler**    
-    _Scientific Linux (multiple commands)_
-                          **$ yum list installed | grep -i --color compiler**
-                          **$ yum list installed | grep -i --color gcc**
-                          **$ yum list installed | grep -i --color java**
-                          **$ yum list installed gcc**
-                          **$ yum list installed 'gcc*'**
+                (general command for rhls)                **$ yum search all compiler**    
+                (**preferred cmd**)                       **$ yum groupinfo "Development tools"**    
+                
+                
+q-what are the command to check the compilers installed on a linux machine    
+a- depends on the linux distrobution...
+
+    _ubuntu_     
+                ()                                        **$ dpkg --list | grep compiler**        
+    _Scientific Linux (multiple commands)_    
+                ()                                        **$ yum list installed | grep -i --color compiler**    
+                ()                                        **$ yum list installed | grep -i --color gcc**    
+                ()                                        **$ yum list installed | grep -i --color java**    
+                ()                                        **$ yum list installed gcc**
+                ()                                        **$ yum list installed 'gcc*'**    
