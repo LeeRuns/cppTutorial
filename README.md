@@ -46,6 +46,7 @@ q-if i setup a cpp program in and compile it with mingw or cygwin, then want to 
 q- How do i get a list of all of the compilers that can be installed on a linux machine?    
 
 a- To list all available compilers that can be installed, enter:    
+
     _debian/ubuntu_
     
         (simple dump of all compilers)            **$ apt-cache search Compiler**    
@@ -66,8 +67,12 @@ a- depends on the linux distrobution...
     
     _Scientific Linux (multiple commands)_ 
     
-        ()                                        **$ yum list installed | grep -i --color compiler**    
+        ()                                        **$ yum list installed | grep -i --color compiler**     
+        
         ()                                        **$ yum list installed | grep -i --color gcc**    
+        
         ()                                        **$ yum list installed | grep -i --color java**    
+        
         ()                                        **$ yum list installed gcc**
+        
         ()                                        **$ yum list installed 'gcc*'**    
